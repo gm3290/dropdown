@@ -1,0 +1,7 @@
+.logo-wrapper {
+  @apply flex items-center gap-2;
+
+  span {
+    @apply text-gray-500;
+  }
+}
