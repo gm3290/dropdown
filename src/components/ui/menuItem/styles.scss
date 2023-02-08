@@ -1,0 +1,7 @@
+.menu-item {
+  @apply p-2 text-sm whitespace-nowrap;
+
+  a {
+    @apply hover:text-rose-300;
+  }
+}

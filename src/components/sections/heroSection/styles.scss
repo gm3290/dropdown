@@ -1,0 +1,7 @@
+.hero-section-wrapper {
+  @apply flex items-center h-screen pt-14 bg-[url('../../../assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-left-bottom;
+}
+
+.hero-section-content {
+  @apply container mx-auto px-4 text-center;
+}

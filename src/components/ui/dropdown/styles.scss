@@ -1,0 +1,26 @@
+.dropdown-wrapper {
+  @apply relative;
+
+  .dropdown-trigger {
+    @apply cursor-pointer;
+  }
+
+  .dropdown-panel {
+    @apply absolute z-0 top-full left-0 h-0 opacity-0 pointer-events-none;
+    transition: all 0.3s ease-in-out;
+
+    .dropdown-panel-inner {
+      @apply bg-white px-4 opacity-0 h-full rounded shadow;
+    }
+  }
+
+  &.expanded {
+    .dropdown-panel {
+      @apply h-auto z-30 opacity-100 pointer-events-auto;
+
+      .dropdown-panel-inner {
+        @apply opacity-100 py-2;
+      }
+    }
+  }
+}

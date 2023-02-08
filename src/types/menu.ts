@@ -1,0 +1,16 @@
+type RequireAtLeastOne<T, Keys extends keyof T = keyof T> = Pick<
+  T,
+  Exclude<keyof T, Keys>
+> &
+  {
+    [K in Keys]-?: Required<Pick<T, K>> & Partial<Pick<T, Exclude<Keys, K>>>;
+  }[Keys];
+
+type MenuItem = {
+  label: string;
+  path?: string;
+  external?: boolean;
+  items?: Array<MenuItem>;
+};
+
+export type Menu = RequireAtLeastOne<MenuItem, "path" | "items">;

@@ -1,0 +1,11 @@
+.app-header {
+  @apply relative;
+
+  .fixed-app-header {
+    @apply fixed top-0 left-0 w-full h-14;
+
+    .app-header-wrapper {
+      @apply container mx-auto px-4 h-full flex items-center justify-between;
+    }
+  }
+}
