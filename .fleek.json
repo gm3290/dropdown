@@ -1,0 +1,11 @@
+{
+  "build": {
+    "image": "node:18",
+    "command": "yarn && yarn build",
+    "publicDir": "build",
+    "baseDir": "",
+    "environment": {
+      "YARN_VERSION": "1.22.19"
+    }
+  }
+}
